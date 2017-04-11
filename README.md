@@ -11,7 +11,7 @@ In the `MyTagHelperComponent.cs` file, change the `TagHelperOutput` to modify th
 To learn more, head to [Channel 9](https://channel9.msdn.com/). A video tutorial will be posted soon!
 
 
-### Before ASP.NET MVC 2.0 RTM later this year
+### Using TagHelperComponents before ASP.NET MVC 2.0 RTM later this year
 
 To get started, [download Visual Studio 2017](https://www.visualstudio.com/downloads/), and create a new ASP.NET Core Web Application project
 
