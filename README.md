@@ -15,17 +15,17 @@ To learn more, head to [Channel 9](https://channel9.msdn.com/). A video tutorial
 
 To get started, (download Visual Studio 2017)[https://www.visualstudio.com/downloads/], and create a new ASP.NET Core Web Application project
 
-![alt text][FileNewProject]
+![FileNewProject](https://github.com/jbagga/TagHelperComponentSample/blob/master/images/FileNewProject.png)
 
-![alt text][.NETCoreWebApp]
+![.NETCoreWebApp](https://github.com/jbagga/TagHelperComponentSample/blob/master/images/.NETCoreWebApp.PNG)
 
-![alt text][WebApp]
+![WebApp](https://github.com/jbagga/TagHelperComponentSample/blob/master/images/WebApp.PNG)
 
 
 ## Acquire ASP.NET Core 2.0 bits
 ### Add a `NuGet.config` file to the root level of your solution:
 
-![alt text][SolutionFolder]
+![SolutionFolder](https://github.com/jbagga/TagHelperComponentSample/blob/master/images/SolutionFolder.PNG)
 
 You can use the `NuGet.config` file in the sample above.
 
@@ -43,15 +43,15 @@ Under the Updates tab:
 
 Press Update
 
-![alt text][ManagePackages]
+![ManagePackages](https://github.com/jbagga/TagHelperComponentSample/blob/master/images/UpdatePackages.png)
 
 You now have the latest bits to use TagHelperComponent and related classes.
 
-[FileNewProject](https://github.com/jbagga/TagHelperComponentSample/blob/master/images/FileNewProject.png)
-[.NETCoreWebApp](https://github.com/jbagga/TagHelperComponentSample/blob/master/images/.NETCoreWebApp.PNG)
-[WebApp](https://github.com/jbagga/TagHelperComponentSample/blob/master/images/WebApp.PNG)
-[SolutionFolder](https://github.com/jbagga/TagHelperComponentSample/blob/master/images/SolutionFolder.PNG)
-[ManagePackages](https://github.com/jbagga/TagHelperComponentSample/blob/master/images/UpdatePackages.png)
+
+
+
+
+
 
 
 
