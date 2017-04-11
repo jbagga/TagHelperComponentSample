@@ -13,7 +13,7 @@ To learn more, head to [Channel 9](https://channel9.msdn.com/). A video tutorial
 
 ### Before ASP.NET MVC 2.0 RTM later this year
 
-To get started, (download Visual Studio 2017)[https://www.visualstudio.com/downloads/], and create a new ASP.NET Core Web Application project
+To get started, [download Visual Studio 2017](https://www.visualstudio.com/downloads/), and create a new ASP.NET Core Web Application project
 
 ![FileNewProject](https://github.com/jbagga/TagHelperComponentSample/blob/master/images/FileNewProject.png)
 
@@ -23,7 +23,7 @@ To get started, (download Visual Studio 2017)[https://www.visualstudio.com/downl
 
 
 ## Acquire ASP.NET Core 2.0 bits
-### Add a `NuGet.config` file to the root level of your solution:
+### Add a NuGet.config file to the root level of your solution:
 
 ![SolutionFolder](https://github.com/jbagga/TagHelperComponentSample/blob/master/images/SolutionFolder.PNG)
 
@@ -31,21 +31,21 @@ You can use the `NuGet.config` file in the sample above.
 
 ### Use the NuGet feed with these bits
 
-Right-click the project and open the Manage NuGet Packages... dialog
+1. Right-click the project and open the Manage NuGet Packages... dialog
 
-Change the Packages source to AspNetCore
+2. Change the Packages source to AspNetCore
 
-Under the Updates tab:
+3. Under the Updates tab:
 
 * Check the "Include prerelease" checkbox
 
 * Check the "Select all" checkbox
 
-Press Update
+4. Press Update
 
 ![ManagePackages](https://github.com/jbagga/TagHelperComponentSample/blob/master/images/UpdatePackages.png)
 
-You now have the latest bits to use TagHelperComponent and related classes.
+You now have the latest bits to use `TagHelperComponent` and related classes.
 
 
 
