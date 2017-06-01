@@ -10,7 +10,7 @@ namespace TagHelperComponentSample
 
         public override Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
-            if (string.Equals(context.TagName, "body", StringComparison.OrdinalIgnoreCase))
+            if (string.Equals(context.TagName, "head", StringComparison.OrdinalIgnoreCase))
             {
                 output.PostContent.AppendHtml($"<script>console.log('The time on the server is {DateTime.Now}')</script> \r\n");
             }
