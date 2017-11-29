@@ -4,29 +4,23 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using System.IO;
 
 namespace TagHelperComponentSample
 {
     public class Startup
     {
-        public Startup(IHostingEnvironment env)
+        public Startup(IConfiguration configuration)
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-                .AddEnvironmentVariables();
-            Configuration = builder.Build();
+            Configuration = configuration;
         }
 
-        public IConfigurationRoot Configuration { get; }
+        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddTransient<ITagHelperComponent, MyTagHelperComponent>();
+            services.AddTransient<ITagHelperComponent, GlobalScriptTagHelperComponent>();
             services.AddMvc();
         }
 
@@ -50,18 +44,6 @@ namespace TagHelperComponentSample
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-        }
-
-        public static void Main(string[] args)
-        {
-            var host = new WebHostBuilder()
-                .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseIISIntegration()
-                .UseKestrel()
-                .UseStartup<Startup>()
-                .Build();
-
-            host.Run();
         }
     }
 }

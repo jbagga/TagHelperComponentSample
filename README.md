@@ -8,7 +8,7 @@ Clone the repository and open the TagHelperComponentSample.sln
 
 In the `MyTagHelperComponent.cs` file, change the `TagHelperOutput` to modify the `<head>` or `<body>` HTML element any way you want.
 
-To learn more, head to [Channel 9](https://channel9.msdn.com/). A video tutorial will be posted soon!
+To learn more, head to [Channel 9](https://channel9.msdn.com/Shows/Code-Conversations/Introduction-to-Tag-Helper-Components-with-Jass-Bagga) for a video tutorial!
 
 # Custom TagHelperComponentTagHelper Sample
 
@@ -18,7 +18,7 @@ In the `MyTagHelper` file, change the `[HtmlTargetElement]` to any HTML element 
 
 In the `MyTagHelperComponent.cs` file, change the `TagHelperOutput` to modify the `<head>` or `<body>` or the HTML element of your choice (the one you created in the step above) any way you want.
 
-To learn more, head to [Channel 9](https://channel9.msdn.com/). A video tutorial will be posted soon!
+To learn more, head to [Channel 9](https://channel9.msdn.com/Shows/Code-Conversations/Creating-Custom-Tag-Helper-Components-with-Jass-Bagga) for a video tutorial!
 
 
 

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26510.0
+VisualStudioVersion = 15.0.27128.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagHelperComponentSample", "TagHelperComponentSample\TagHelperComponentSample.csproj", "{0FB7A16E-E996-4036-9602-6084DE11913B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TagHelperComponentSample", "..\..\..\..\..\git\VSLiveDemo\src\TagHelperComponentSample\TagHelperComponentSample.csproj", "{FB06B9C1-B08A-4019-B490-3689579DD112}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0FB7A16E-E996-4036-9602-6084DE11913B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0FB7A16E-E996-4036-9602-6084DE11913B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0FB7A16E-E996-4036-9602-6084DE11913B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0FB7A16E-E996-4036-9602-6084DE11913B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB06B9C1-B08A-4019-B490-3689579DD112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB06B9C1-B08A-4019-B490-3689579DD112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB06B9C1-B08A-4019-B490-3689579DD112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB06B9C1-B08A-4019-B490-3689579DD112}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E153ACC-3B56-440F-AE9C-4BFA44483D90}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,21 @@
+﻿@using System.IO
+
+@inject Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager manager
+@{
+    string message;
+    if (Equals(DayOfWeek.Tuesday, DateTime.Now.DayOfWeek))
+    {
+        message = File.ReadAllText("greetingControl.html");
+    }
+    else
+    {
+        message = File.ReadAllText("greetingControl2.html");
+    }
+    manager.Components.Add(new MyTagHelperComponent(1, message));
+}
+<body inject>
+
+</body>
+<footer inject>
+
+</footer>

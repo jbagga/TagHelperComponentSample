@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel;
-using Microsoft.AspNetCore.Mvc.Razor.TagHelpers;
+﻿using Microsoft.AspNetCore.Mvc.Razor.TagHelpers;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using Microsoft.Extensions.Logging;
+using System.ComponentModel;
 
 namespace CustomTagHelperComponentTagHelperSample
 {
@@ -10,8 +9,8 @@ namespace CustomTagHelperComponentTagHelperSample
     [EditorBrowsable(EditorBrowsableState.Never)]
     public class MyTagHelper : TagHelperComponentTagHelper
     {
-        public MyTagHelper(IEnumerable<ITagHelperComponent> components, ILoggerFactory loggerFactory)
-            : base(components, loggerFactory)
+        public MyTagHelper(ITagHelperComponentManager manager, ILoggerFactory loggerFactory)
+            : base(manager, loggerFactory)
         {
         }
     }

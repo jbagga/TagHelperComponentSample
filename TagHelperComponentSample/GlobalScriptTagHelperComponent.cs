@@ -1,18 +1,19 @@
 ﻿using System;
+using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 
 namespace TagHelperComponentSample
 {
-    public class MyTagHelperComponent : ITagHelperComponent
+    public class GlobalScriptTagHelperComponent : ITagHelperComponent
     {
-        private int _order;
-        private string _html;
+        private int _order = 0;
 
-        public MyTagHelperComponent(int order, string html)
+        private string _style;
+
+        public GlobalScriptTagHelperComponent()
         {
-            _order = order;
-            _html = html;
+            _style = File.ReadAllText("scriptTag.html");
         }
 
         public int Order => _order;
@@ -23,9 +24,9 @@ namespace TagHelperComponentSample
 
         public Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
-            if (string.Equals(context.TagName, "footer", StringComparison.Ordinal) && output.Attributes.ContainsName("inject"))
+            if (string.Equals(context.TagName, "head", StringComparison.Ordinal) && !output.Attributes.ContainsName("inject"))
             {
-                output.PostContent.AppendHtml(_html);
+                output.PostContent.AppendHtml(_style);
             }
 
             return Task.FromResult(0);
